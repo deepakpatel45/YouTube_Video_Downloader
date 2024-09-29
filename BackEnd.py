@@ -26,7 +26,7 @@ def download_youtube_video(url, output_path="."):
 # Render the HTML page
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
-    return templates.TemplateResponse("FrontEnd.html", {"request": request})
+    return templates.TemplateResponse("index.html", {"request": request})
 
 
 # Handle form submission
